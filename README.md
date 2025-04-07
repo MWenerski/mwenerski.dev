@@ -42,3 +42,14 @@ my-portfolio/
   | │ ├── index.css
   | │ └── main.tsx
   
+## Coming Soon
+
+    - Contact form with email support
+
+    - Admin dashboard for managing projects
+
+    - Image uploads and media embeds
+
+    - Database integration (PostgreSQL or SQLite)
+
+    - Responsive design and animations
