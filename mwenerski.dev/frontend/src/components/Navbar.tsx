@@ -3,7 +3,7 @@ import React from "react";
 const Navbar: React.FC = () => {
   return (
     <nav style={styles.navbar}>
-      <h1 style={styles.logo}>My Portfolio - MWenerski.dev</h1>
+      <h1 style={styles.logo}>Maciej's 'Things' :</h1>
       <ul style={styles.navLinks}>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
