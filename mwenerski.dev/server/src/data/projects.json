@@ -1,1 +1,11 @@
-[]
+[
+    {
+      "id": "1",
+      "title": "Full-stack Portfolio Web App",
+      "description": "A personal portfolio site built with React, Tailwind, and Framer Motion.",
+      "techStack": ["React", "TypeScript", "TailwindCSS"],
+      "repoUrl": "https://github.com/MWenerski/mwenerski.dev",
+      "liveUrl": "https://mwenerski.dev"
+    }
+  ]
+  

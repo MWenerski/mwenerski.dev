@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Router } from 'express';
 import {
   getProjects,
   addProject,
@@ -6,15 +6,20 @@ import {
   deleteProject
 } from '../controllers/projectController';
 
-const router = express.Router();
-console.log('updateProject:', typeof updateProject);
-console.log('deleteProject:', typeof deleteProject);
-
+const router: Router = express.Router();
 
 router.get('/', getProjects);
 router.post('/', addProject);
 router.put('/:id', updateProject);
 router.delete('/:id', deleteProject);
 
+// DEBUG: log registered routes
+setTimeout(() => {
+  (router.stack || []).forEach((layer: any) => {
+    if (layer.route?.path) {
+      console.log('ROUTE:', layer.route.path);
+    }
+  });
+}, 0);
 
 export default router;
