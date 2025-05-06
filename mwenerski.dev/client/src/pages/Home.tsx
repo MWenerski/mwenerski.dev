@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Carousel from '../components/Carousel';
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          Aspiring Developer & System Admin | Still learning
+          Developer & System Admin | Still learning
         </motion.p>
         <motion.div
           className="mt-8 flex gap-4"
@@ -32,7 +33,7 @@ const Home = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
         >
-          {/* You can put buttons or icons here later */}
+          {<Carousel />}
         </motion.div>
       </main>
 

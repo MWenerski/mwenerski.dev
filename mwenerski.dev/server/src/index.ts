@@ -1,6 +1,7 @@
 import express from "express";
 import path from "path";
 import projectRoutes from "./routes/projectRoutes";
+import cors from 'cors';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -10,6 +11,8 @@ app.use(express.json());
 
 // API routes
 app.use("/api/projects", projectRoutes);
+
+app.use(cors({ origin: 'http://localhost:5173' }));
 
 // (Optional) Log all registered routes
 if (app._router && Array.isArray(app._router.stack)) {
@@ -35,5 +38,5 @@ app.get(/^\/(?!api).*/, (_req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port http://localhost:${PORT}`);
 });
